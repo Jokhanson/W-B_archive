@@ -1,0 +1,263 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #fff;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    height: 40px;
+}
+
+nav button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+}
+
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #e0e0e0;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero button {
+    margin: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.gallery {
+    padding: 2rem;
+    background-color: #fff;
+}
+
+.gallery h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.about {
+    padding: 2rem;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.about h2 {
+    margin-bottom: 1rem;
+}
+
+.team {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.contact {
+    padding: 2rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 1rem;
+}
+
+.contact button {
+    margin: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+}
+
+footer nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+footer button {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+/* Стили для нового элемента */
+.py-10 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.sm\:py-16 {
+    @media (min-width: 640px) {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+}
+
+.lg\:py-20 {
+    @media (min-width: 1024px) {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+}
+
+.bg-slate-50 {
+    background-color: #f8fafc;
+}
+
+.dark\:bg-slate-800 {
+    @media (prefers-color-scheme: dark) {
+        background-color: #1e293b;
+    }
+}
+
+.max-w-7xl {
+    max-width: 80rem;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.sm\:px-6 {
+    @media (min-width: 640px) {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+
+.lg\:px-8 {
+    @media (min-width: 1024px) {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+.TITLE-PRIMARY {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.dark\:text-white\/90 {
+    @media (prefers-color-scheme: dark) {
+        color: rgba(255, 255, 255, 0.9);
+    }
+}
+
+.grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.md\:grid-cols-2 {
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+.lg\:grid-cols-4 {
+    @media (min-width: 1024px) {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+
+.gap-x-8 {
+    column-gap: 2rem;
+}
+
+.gap-y-6 {
+    row-gap: 1.5rem;
+}
+
+.IMAGE {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    object-fit: cover;
+}
+
+.TITLE-SECONDARY {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.DESC {
+    font-size: 0.875rem;
+    color: #64748b;
+}
+
+.dark\:text-slate-400 {
+    @media (prefers-color-scheme: dark) {
+        color: #94a3b8;
+    }
+}
